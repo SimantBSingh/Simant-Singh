@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.no_style_links {
+    text-decoration: none;
+}
+
+nav.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #006747;
+    height: fit-content;
+    padding: 1.75vh 0;
+    /* position: sticky;
+    top:0; */
+}
+
+nav.navbar2 {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.searchButton {
+    display: inline-flex;
+    align-items: center;
+}
+
+.search {
+    margin: 0px 10px;
+    height: 4vh;
+}
+
+ul.extrainfo>li {
+    display: inline;
+    padding: 0vh 3vh;
+    list-style: none;
+}
+
+ul.extrainfo a,
+.searchButton>span {
+    color: white;
+    font-size: 3vh;
+}
+
+.navbar-burger {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 2.5vh;
+}
+
+.navbar-burger>div {
+    background-color: #006747;
+    width: 5vw;
+    height: 0.75vh;
+    margin: 5px 15px 0 5px;
+    display: none;
+}
+
+.nav-cross {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    color: #006747;
+    margin-right: 5px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0.5vh;
+}
+
+.bigPixelNav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+ul.uni-details {
+    height: fit-content;
+    display: flex;
+    background-color: white;
+}
+
+.hidden-nav {
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+    background-color: #006747;
+    transform: scale(1,0);
+    padding: 0 2vw;
+    /* height: 40vh; */
+    width: 95.9715%;
+    position: absolute;
+    transition: transform 500ms ease-in-out;
+    transform-origin: top;
+}
+.hidden-nav ul,
+.hidden-nav a {
+    list-style: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+ul.hidden-extrainfo{
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+    transform-origin: top;
+}
+.hidden-nav li {
+    margin: 2vh 0;
+    padding-top: 2vh;
+}
+
+.university_name_heading {
+    display: inline;
+    font-size: 7vh;
+    color: #006747;
+    padding: 1vh 0vw;
+}
+
+.university_name_heading>strong {
+    font-weight: lighter;
+}
+
+ul.uni-details {
+    padding-top: 3vh;
+}
+
+ul.uni-details>li {
+    padding: 0vh 0vw 0vh 3vw;
+    list-style: none;
+    font-size: 3vh;
+}
+
+ul.uni-details>li:hover .submenus>ul {
+    display: inline-block;
+    position: absolute;
+    background-color: #006747;
+    border-radius: 10px;
+    width: fit-content
+}
+
+.submenus ul {
+    list-style: none;
+    display: none;
+}
+
+.submenus>ul>li>a {
+    text-align: center;
+    margin: 0px 5px 3px 5px;
+    color: white;
+}
+
+.submenus>ul>li {
+    padding: 2vh 0vw;
+}
+
+ul.uni-details>li>a {
+    color: black;
+}
+
+.big-cover-image {
+    height: fit-content;
+    overflow-x: hidden;
+    /* position: absolute; */
+}
+
+.caption {
+    margin-top: -7%;
+    text-align: center;
+}
+
+div.caption>b {
+    font-weight: bolder;
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+ul.buttons1 {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 12rem;
+    row-gap: 1rem;
+    margin: 1.75rem 0 5rem 0;
+    text-align: center;
+}
+
+ul.buttons1>li {
+    background-color: #006747;
+    border-radius: 10px;
+    border: 2px solid rgba(204, 204, 204, 0.658);
+    padding: 1rem 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.buttons1 a {
+    color: white;
+}
+
+li.uni_details_links_hover:hover {
+    box-shadow: 20px 20px 20px 5px grey;
+    transform: scale(1.25, 1.25);
+}
+
+ul.university_details_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    row-gap: 7vh;
+}
+
+ul.university_details_links>li {
+    margin: 20px 40px 20px 40px;
+    box-shadow: 10px 10px 10px 2px rgb(199, 198, 198);
+    max-width: min-content;
+    padding: 0 3vw;
+}
+
+ul.university_details_links li p {
+    font-size: 18px;
+    margin: 2px;
+    color: black;
+}
+
+ul.university_details_links li h2 {
+    color: #006747;
+}
+
+section.students_about_uni {
+    display: flex;
+    flex-direction: row;
+    /* width: 98%; */
+    margin: 10vh 0;
+    overflow: hidden;
+}
+
+section.students_about_uni img {
+    height: 70vh;
+    width: 50vw;
+}
+
+section.students_about_uni p {
+    color: white;
+    font-size: 30px;
+    margin: 3vh 0 1vh 0;
+    text-align: center;
+}
+
+section.students_about_uni>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3vh 17vw;
+    margin: 0 8vw;
+    background-color: rgb(92, 179, 92);
+    border-radius: 35px;
+    box-shadow: 0 25px 10px 3px #006747;
+}
+
+#davids_experience {
+    margin-right: 8vw !important;
+}
+
+section.students_about_uni .sau_border {
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    height: 92%;
+    width: 92%;
+    position: absolute;
+    left: 3vw;
+}
+
+.right_arrow {
+    position: absolute;
+    background: rgb(109, 223, 143);
+    height: 12%;
+    width: 6%;
+    border-radius: 50%;
+    top: 50%;
+    right: 7%;
+    cursor: pointer;
+}
+
+.left_arrow {
+    position: absolute;
+    background: rgb(109, 223, 143);
+    height: 12%;
+    width: 6%;
+    border-radius: 50%;
+    top: 50%;
+    left: 7%;
+    cursor: pointer;
+}
+
+.right_arrow>div {
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top: 10%;
+    right: 15%;
+}
+
+.left_arrow>div {
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top: 10%;
+    left: 15%;
+}
+
+section.more_info_about_university {
+    background-color: rgb(196, 193, 193);
+    border-right: grey solid 10px;
+    border-left: grey solid 10px;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 20vh auto 0vh auto;
+    padding-bottom: 5%;
+}
+
+.unique-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rise_above_caption {
+    color: #006747;
+    font-weight: bold;
+    position: absolute;
+    left: 20vw;
+    margin-top: 3vh;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.individual_info_about_university {
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    align-items: center;
+    padding-top: 6vh;
+    flex-wrap: wrap;
+    margin: 15vh 2vw;
+}
+
+.individual_info_about_university>div {
+    text-align: center;
+    margin: 0 1vw;
+}
+
+strong.individual_info_strongtopic {
+    color: #006747;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}
+
+.individual_info_about_university p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5vh;
+}
+
+.find_out_more_button {
+    background-color: #006747;
+    max-width: fit-content;
+    padding: 1vh 1vw;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    border: rgb(6, 143, 47) solid 1px;
+    text-decoration: none;
+    margin-top: -15vh;
+}
+
+.university_news_title {
+    display: flex;
+    justify-content: center;
+    color: #006747;
+}
+
+.university_news_title h1 {
+    padding: 0vh 15vw;
+    margin-top: 14vh;
+    text-align: center;
+    border-top: black solid 5px;
+}
+
+.university_news_details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.news-info {
+    background-color: white;
+    text-align: center;
+    border: grey solid 3px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: min-content;
+    padding: 2vh 2vw 3vh 2vw;
+}
+
+.university_news_details div h2 {
+    color: #006747;
+    margin: 4px 0px;
+}
+
+.university_news_details div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 3px 3vw;
+    color: black;
+}
+
+.more_news_and_events {
+    background-color: #006747;
+    max-width: max-content;
+    max-height: min-content;
+    padding: 1vh 1vw;
+    color: white;
+    font-size: 20px;
+    margin: 2vh auto 8vh auto;
+}
+
+footer {
+    background-color: #006747;
+}
+
+.footer-content {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.application_links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 5vh;
+}
+
+.application_links>.university_name_footer {
+    font-size: 30px;
+    color: white;
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.footer_button {
+    background-color: rgb(56, 55, 55);
+    padding: 1vh 2vw;
+    color: white;
+    max-height: fit-content;
+    width: fit-content;
+    font-size: 20px;
+    text-align: center;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 3vw;
+    flex-wrap: wrap;
+}
+
+.more-info h2 {
+    color: white;
+    margin-bottom: 4vh;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+}
+
+.more-info a,
+.more-info li {
+    margin: 2vh 0vw;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding-bottom: 3px;
+}
