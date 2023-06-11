@@ -1,5 +1,4 @@
 - 👋 Hi, I’m @Simant-Singh
-- 👀 I’m interested in Web Devel
 - 💞️ I’m looking to collaborate on projects and apply the knowledge gained from it in the real world
 - 📫 How to reach me ... via email (singhsimant300@gmail.com)
 
